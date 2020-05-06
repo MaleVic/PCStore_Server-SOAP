@@ -17,7 +17,7 @@ public class ProductRepository {
     public void initData() {
         Product headphones = new Product();
         headphones.setIdProduct(1);
-        headphones.setName("Наушники");
+        headphones.setName("Наушники Sony");
         headphones.setPrice(600);
 
 
@@ -25,7 +25,7 @@ public class ProductRepository {
 
         Product laptop = new Product();
         laptop.setIdProduct(2);
-        laptop.setName("Ноутбук");
+        laptop.setName("Ноутбук HP");
         laptop.setPrice(15000);
 
 
@@ -34,7 +34,7 @@ public class ProductRepository {
 
         Product monitor = new Product();
         monitor.setIdProduct(3);
-        monitor.setName("Монитор");
+        monitor.setName("Монитор BenQ");
         monitor.setPrice(7000);
 
 
@@ -98,9 +98,9 @@ public class ProductRepository {
         if (products.containsKey(id_product))
         {
             products.remove(id_product);
-            return "Product "+id_product+" deleted";
+            return "Товар с ID = "+id_product+" удалён";
         }
-        return  "Product "+ id_product+" does not exists";
+        return  "Товар с ID = "+ id_product+" не существует";
 
     }
 }
